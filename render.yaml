@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: efootball-doh
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: DOH_TOKEN
+        generateValue: true
+      - key: UPSTREAM_DOH
+        value: https://cloudflare-dns.com/dns-query

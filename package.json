@@ -1,0 +1,13 @@
+{
+  "name": "efootball-doh",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A small authenticated DNS-over-HTTPS forwarder for testing with Intra.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
